@@ -1,0 +1,178 @@
+---
+const allCategories = [
+[
+  "Interruptores Automáticos, Fusibles y Protección",
+  "Dispositivos para prevenir sobrecargas eléctricas.",
+  "Interruptores-Automáticos-Fusibles-y-Protectores"
+],
+[
+  "Conectores",
+  "Unen circuitos eléctricos de manera segura.",
+  "Conectores"
+],
+[
+  "Componentes Electrónicos",
+  "Elementos básicos para circuitos electrónicos.",
+  "Componentes-Electronicos"
+],
+[
+  "Cajas, Estantes y Gabinetes",
+  "Protegen y organizan equipos eléctricos.",
+  "Gabinetes-Estantes-y-Armarios"
+],
+[
+  "Instalaciones, Limpieza y Mantenimiento",
+  "Servicios para mantener instalaciones limpias.",
+  "Instalaciones,-Limpieza-y-Mantenimiento"
+],
+[
+  "Ventiladores y Gestión Térmica",
+  "Controlan la temperatura de equipos eléctricos.",
+  "Ventiladores-y-Gestion-Termica"
+],
+[
+  "Controles Industriales",
+  "Automatizan y regulan procesos industriales.",
+  "Controles-Industriales"
+],
+[
+  "Comunicaciones de Datos Industriales",
+  "Transmiten datos en entornos industriales.",
+  "Comunicaciones-de-Datos-Industriales"
+],
+[
+  "Iluminación y Señalización",
+  "Proporcionan luz y señales visuales.",
+  "Iluminacion-e-indicacion"
+],
+[
+  "Transmisión de Potencia Mecánica",
+  "Transmiten energía mecánica entre componentes.",
+  "Transmision-Potencia-Mecanica"
+],
+[
+  "Motores y Controles de Motor",
+  "Controlan el funcionamiento de motores eléctricos.",
+  "Motores-y-Controladores-de-Motores"
+],
+[
+  "PLC y HMI",
+  "Controlan y monitorean procesos industriales.",
+  "PLC-y-HMI"
+],
+[
+  "Neumática y Control de Fluidos",
+  "Manejan fluidos y sistemas neumáticos.",
+  "Neumatica-y-Control-de-Fluidos"
+],
+[
+  "Productos de Potencia",
+  "Suministran y gestionan energía eléctrica.",
+  "Productos-de-Potencia"
+],
+[
+  "Raspberry Pi, Arduino y Herramientas de Desarrollo",
+  "Plataformas para proyectos de electrónica.",
+  "Raspberry-Pi,-Arduino-y-Herramientas-de-Desarrollo"
+],
+[
+  "Relés",
+  "Interruptores eléctricos controlados por señales.",
+  "Reles"
+],
+[
+  "Sensores",
+  "Detectan cambios en el entorno físico.",
+  "Sensores"
+],
+/* 
+[
+  "Interruptores",
+  "Controlan el flujo de electricidad.",
+  "Interruptores"
+],
+[
+  "Pruebas y Medición",
+  "Herramientas para evaluar y medir parámetros.",
+  "Pruebas-y-Medicion"
+],
+[
+  "Herramientas y Hardware",
+  "Equipos y utensilios para trabajos manuales.",
+  "Herramientas-y-Hardware"
+],
+[
+  "Cables y Alambres",
+  "Conducen electricidad entre componentes.",
+  "Cables-y-Alambres"
+]*/
+]
+---
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 p-5">
+  <div class="flex flex-wrap items-center place-content-center justify-around max-w-screen-xl mx-auto">
+      <a href="https://www.cd-solec.com/" target="_blank" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://cd-solec.com/img/logos/CD-SOLEC_Horizontal.png" class="h-16" alt="CD SOLEC LOGO" />
+        <span class="self-center text-1xl text-color-green font-bold whitespace-nowrap text-shadow dark:text-white"></span>
+      </a>
+      <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+          <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+      </div>
+      <div id="mega-menu" class="z-20 items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+          <ul class="flex flex-col mt-4 font-bold text-lg md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+              <li>
+                  <a href="../" class="block py-2 px-3 text-green-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-green-500 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
+              </li>
+              <li>
+                  <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-icons-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                      Todas las Categorias <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+</svg>
+                  </button>
+
+                  <div
+                  id="mega-menu-icons-dropdown"
+                 class="hidden mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
+                >
+                 <div>
+                   <ul
+                     class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 px-4 py-5 mx-auto text-gray-900 dark:text-white md:px-200" aria-labelledby="mega-menu-icons-dropdown-button"
+                   >
+                     {
+                       allCategories.map((e) => (
+                         <li>
+                           <a
+                             href={"./"+e[2]}
+                             class="block p-5 rounded-lg hover:bg-green-200 dark:hover:bg-gray-700"
+                           >
+                             <div class="font-semibold">{e[0]}</div>
+                             <span class="text-sm text-gray-500 dark:text-gray-400">
+                               {e[1]}
+
+                             </span>
+                           </a>
+                         </li>
+                       ))}
+                   </ul>
+                 </div>
+                </div>
+
+
+              </li>
+              <li>
+                  <a href="../Fabricantes" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Fabricantes</a>
+              </li>
+              <li>{}
+                  <a href="../Nosotros" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+
