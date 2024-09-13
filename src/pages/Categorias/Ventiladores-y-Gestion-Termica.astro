@@ -1,0 +1,118 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [
+  [
+    "Ventiladores y Gestión Térmica",
+    "Ya sea que necesites aire acondicionado, ventiladores de refrigeración, calentadores, filtros o conductos, el surtido de RS de productos de Calefacción, Ventilación y Aire Acondicionado incluye algo para ti.",
+    "Ventiladores-y-Gestion-Termica"
+  ],
+  [
+    {
+      "name": "Aire Acondicionado",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2534145.jpg"
+    },
+    {
+      "name": "Sopladores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301550.jpg"
+    },
+    {
+      "name": "Ventiladores de Techo",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4876339.jpg"
+    },
+    {
+      "name": "Ventiladores para Espacios Confinados",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4876340.jpg"
+    },
+    {
+      "name": "Enfriadores / Refrigeradores",
+      "image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/70066728.jpg"
+    },
+    {
+      "name": "Módulos de Refrigeración",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4291944.jpg"
+    },
+    {
+      "name": "Ventiladores de Escritorio",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4876338.jpg"
+    },
+    {
+      "name": "Calentadores Eléctricos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2763401.jpg"
+    },
+    {
+      "name": "Ventiladores de Equipo",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301551.jpg"
+    },
+    {
+      "name": "Accesorios para Ventiladores y Sopladores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2520561.jpg"
+    },
+    {
+      "name": "Protecciones de Ventiladores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4382949.jpg"
+    },
+    {
+      "name": "Ventiladores de Filtro",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3598260.jpg"
+    },
+    {
+      "name": "Rejillas",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4506439.jpg"
+    },
+    {
+      "name": "Intercambiadores de Calor",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2533834.jpg"
+    },
+    {
+      "name": "Disipadores de Calor",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2520501.jpg"
+    },
+    {
+      "name": "Ventiladores Industriales",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4876333.jpg"
+    },
+    {
+      "name": "Accesorios para Impulsores Motorizados",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2730931.jpg"
+    },
+    {
+      "name": "Impulsores Motorizados",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1641613.jpg"
+    },
+    {
+      "name": "Aislantes, Zócalos y Kits para Semiconductores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2748440.jpg"
+    },
+    {
+      "name": "Calentadores de Ambiente y Radiadores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3121758.jpg"
+    },
+    {
+      "name": "Almohadillas Térmicas",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2544821.jpg"
+    },
+    {
+      "name": "Conjuntos Termoeléctricos y Módulos Peltier",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1673.jpg"
+    }
+  ]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+    <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"Productos de Potencia",
+"Cada dispositivo electrónico requiere un suministro estable de energía para un funcionamiento confiable. RS ofrece fuentes de alimentación AC y DC de todo tipo, incluyendo fuentes de alimentación industriales montadas en riel DIN, controladores LED sellados, adaptadores de escritorio y de pared. RS también cuenta con una variedad de fuentes de alimentación ininterrumpidas (UPS) para alimentar su equipo en caso de cortes de energía, así como inversores de potencia que suministran energía AC desde una batería.", "Productos-de-Potencia"],
+[
+{
+"name": "Alternadores y Generadores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4529275.jpg"
+},
+{
+"name": "Baterías",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4198940.jpg"
+},
+{
+"name": "Convertidor (Fuentes de Alimentación DC-DC)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2901601.jpg"
+},
+{
+"name": "Inversor (Fuentes de Alimentación DC-AC)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2828521.jpg"
+},
+{
+"name": "PoE (Power Over Ethernet)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2874227.jpg"
+},
+{
+"name": "Fuente de Alimentación (Fuentes de Alimentación AC-DC)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2469895.jpg"
+},
+{
+"name": "Accesorios de Fuente de Alimentación",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3097726.jpg"
+},
+{
+"name": "Cargador/Inversor Solar",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2786420.jpg"
+},
+{
+"name": "Panel Solar",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4460411.jpg"
+},
+{
+"name": "Combinador de Energía Solar",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2745442.jpg"
+},
+{
+"name": "Transformadores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4770959.jpg"
+},
+{
+"name": "UPS (Fuentes de Alimentación Ininterrumpidas)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2475426.jpg"
+}
+]
+]
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

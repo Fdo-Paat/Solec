@@ -1,0 +1,93 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"PLC y HMI",
+"Los controladores lógicos programables (PLC) son el centro de los sistemas de procesos automatizados. Estos sistemas comienzan con sensores que envían información al PLC sobre las condiciones del sistema. Usando esa información, el PLC está programado para proporcionar respuestas basadas en las entradas de los sensores. Estas respuestas se envían a dispositivos que pueden afectar el proceso, como bombas, calentadores, actuadores, etc.",
+"PLC-y-HMI"],
+[
+{
+"name": "Paquetes y kits de controladores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154580.jpg"
+},
+{
+"name": "Estaciones de datos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4246669.jpg"
+},
+{
+"name": "Accesorios HMI",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154067.jpg"
+},
+{
+"name": "Pantallas HMI",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4113946.jpg"
+},
+{
+"name": "Módulos HMI",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4075996.jpg"
+},
+{
+"name": "Monitores industriales",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4119238.jpg"
+},
+{
+"name": "PCs industriales",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154575.jpg"
+},
+{
+"name": "Adquisición de datos de PC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4160664.jpg"
+},
+{
+"name": "Accesorios de adquisición de datos de PC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4160914.jpg"
+},
+{
+"name": "Accesorios de PLC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154576.jpg"
+},
+{
+"name": "Módulos de expansión de PLC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154577.jpg"
+},
+{
+"name": "Software de programación de PLC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154578.jpg"
+},
+{
+"name": "Combos PLC/HMI",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4075997.jpg"
+},
+{
+"name": "PLCs",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4109283.jpg"
+},
+{
+"name": "Módulos I/O remotos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154600.jpg"
+},
+{
+"name": "Relés inteligentes",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154579.jpg"
+}
+]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

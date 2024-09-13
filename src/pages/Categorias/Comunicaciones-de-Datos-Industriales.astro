@@ -1,0 +1,57 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"Comunicaciones de datos industriales",
+"Las comunicaciones industriales tienen los interruptores Ethernet, enrutadores, convertidores de protocolo y dispositivos de comunicación inalámbrica que procesan internamente la información del sistema.",
+"Comunicaciones-de-datos-industriales"],
+[
+{
+"name": "Accesorios de comunicación de datos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154591.jpg"
+},
+{
+"name": "Interruptores Ethernet",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4113944.jpg"
+},
+{
+"name": "Puertas de enlace IoT Edge",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4974191.jpg"
+},
+{
+"name": "Convertidores de medios",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4980189.jpg"
+},
+{
+"name": "Convertidores de protocolo",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4250227.jpg"
+},
+{
+"name": "Enrutadores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154597.jpg"
+},
+{
+"name": "Comunicaciones inalámbricas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154602.jpg"
+}
+]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

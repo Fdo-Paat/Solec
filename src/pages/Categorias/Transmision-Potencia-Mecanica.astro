@@ -1,0 +1,77 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [[
+"Transmisión Potencia Mecánica",
+"La transmisión de potencia mecánica es el proceso de transferir energía de un componente o máquina a otro dentro de un sistema mecánico. Esta transferencia de potencia es esencial para el funcionamiento de diversas maquinarias, equipos y sistemas mecánicos. Los sistemas de transmisión de potencia mecánica generalmente implican el uso de elementos y mecanismos para transmitir movimiento rotacional o lineal, par y fuerza desde una fuente de energía (por ejemplo, un motor) a un punto específico de aplicación.",
+"Transmision-Potencia-Mecanica"],
+[
+{
+"name": "Rodamientos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7071233.jpg"
+},
+{
+"name": "Correas y poleas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7071241.jpg"
+},
+{
+"name": "Frenos, embragues y limitadores de par",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7084377.jpg"
+},
+{
+"name": "Bujes",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105439.jpg"
+},
+{
+"name": "Acoplamientos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105438.jpg"
+},
+{
+"name": "Engranajes y racks de engranaje",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105440.jpg"
+},
+{
+"name": "Movimiento lineal",
+"image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/72277259.jpg"
+},
+{
+"name": "Extremos de varilla",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105443.jpg"
+},
+{
+"name": "Cadenas de rodillos y accesorios",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105441.jpg"
+},
+{
+"name": "Collares de eje, bloques de eje y sellos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105036.jpg"
+},
+{
+"name": "Clavos de corte y protección contra sobrecargas",
+"image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/72513487.jpg"
+},
+{
+"name": "Engranajes",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105042.jpg"
+}
+]
+]
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [
+  [
+    "Gabinetes, Estantes y Armarios",
+    "Todos los dispositivos electrónicos, desde tu teléfono hasta tu sistema de control industrial, necesitan un gabinete para protegerse.",
+    "Gabinetes-Estantes-y-Armarios"
+  ],
+  [
+    {
+      "name": "Gabinete y Estante",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2461177.jpg"
+    },
+    {
+      "name": "Partes/Accesorios de Gabinete y Estante",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2459862.jpg"
+    },
+    {
+      "name": "Accesorios de Gabinete Eléctrico",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2731971.jpg"
+    },
+    {
+      "name": "Gabinetes Eléctricos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2526838.jpg"
+    },
+    {
+      "name": "Gabinete Electrónico",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2737925.jpg"
+    },
+    {
+      "name": "Accesorios de Gabinete Electrónico",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2731972.jpg"
+    },
+    {
+      "name": "Sistemas de Purga y Presurización",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4333593.jpg"
+    },
+    {
+      "name": "Gabinete de Botón Pulsador",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3581835.jpg"
+    },
+    {
+      "name": "Accesorios del Sistema Estructural",
+      "image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/71910121.jpg"
+    },
+    {
+      "name": "Rieles del Sistema Estructural",
+      "image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/71815710.jpg"
+    },
+    {
+      "name": "Subestante / Jaula de Tarjetas",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1635780.jpg"
+    },
+    {
+      "name": "Accesorios de Subestante/Jaula de Tarjetas",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2798872.jpg"
+    },
+    {
+      "name": "Maletas de Viaje y de Mano",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2736581.jpg"
+    }
+  ]
+]
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+    <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

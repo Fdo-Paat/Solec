@@ -1,0 +1,84 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [
+  [
+    "Interruptores Automáticos, Fusibles y Protección",
+    "Es un mundo peligroso alá afuera. Las corrientes excesivas, caídas de línea y picos, la interferencia electromagnética, un mal factor de potencia, sobrecargas, todos intentan dañar tu equipo, arruinar tu productividad y costarte dinero.",
+    "Interruptores-Automáticos-Fusibles-y-Protectores"
+  ],
+  [
+    {
+      "name": "Paneles de Interruptores / Centros de Carga",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4501791.jpg"
+    },
+    {
+      "name": "Accesorios para Paneles de Interruptores / Centros de Carga",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4506440.jpg"
+    },
+    {
+      "name": "Interruptores Automáticos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4763625.jpg"
+    },
+    {
+      "name": "Transformadores de Voltaje Constant",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1643984.jpg"
+    },
+    {
+      "name": "Filtros",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2548005.jpg"
+    },
+    {
+      "name": "Accesorios para Fusibles",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1643761.jpg"
+    },
+    {
+      "name": "Kits de Fusibles",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1642400.jpg"
+    },
+    {
+      "name": "Fusibles",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301553.jpg"
+    },
+    {
+      "name": "Protección GFI",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2766041.jpg"
+    },
+    {
+      "name": "Reactores de Línea",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1644058.jpg"
+    },
+    {
+      "name": "Acondicionadores de Energía",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1643936.jpg"
+    },
+    {
+      "name": "Controlador de Factor de Potencia",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2722544.jpg"
+    },
+    {
+      "name": "Dispositivos de Protección contra Sobretensiones",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2726308.jpg"
+    }
+  ]
+]
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+    <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

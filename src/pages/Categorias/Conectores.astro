@@ -1,0 +1,92 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [
+  [
+    "Conectores",
+    "La importancia de los conectores a veces puede pasarse por alto debido a su función simple en comparación con productos más activos. Sin embargo, estos componentes fundamentales son a menudo una mezcla sofisticada de materiales que satisfacen los requisitos más estrictos, como los materiales de la carcasa para conectores circulares militares y aeroespaciales o la variedad de recubrimientos de contacto para terminaciones.",
+    "Conectores"
+  ],
+  [
+    {
+      "name": "Conectores Específicos para Aplicaciones",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3089210.jpg"
+    },
+    {
+      "name": "Conectores y Accesorios de Audio y Video",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1642430.jpg"
+    },
+    {
+      "name": "Conectores de Automatización",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3172080.jpg"
+    },
+    {
+      "name": "Conectores de Nivel de Placa",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3603156.jpg"
+    },
+    {
+      "name": "Barras de Bus y Productos de Puesta a Tierra",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2985996.jpg"
+    },
+    {
+      "name": "Conectores Circulares",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301086.jpg"
+    },
+    {
+      "name": "Conectores Coaxiales / RF",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1643199.jpg"
+    },
+    {
+      "name": "Conectores de Datos / Ethernet / Telecom",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1642456.jpg"
+    },
+    {
+      "name": "Conectores D-Sub, Contactos y Accesorios",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513989.jpg"
+    },
+    {
+      "name": "Conectores Eléctricos / de Red",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1641339.jpg"
+    },
+    {
+      "name": "Zócalos, Enchufes y Adaptadores de CI",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301549.jpg"
+    },
+    {
+      "name": "Conectores Rectangulares",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3603154.jpg"
+    },
+    {
+      "name": "Probes de Resorte, Conectores de Prueba y Adaptadores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2470494.jpg"
+    },
+    {
+      "name": "Bloques y Tiras de Terminales",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1642741.jpg"
+    },
+    {
+      "name": "Terminales, Ojetes y Casquillos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1641254.jpg"
+    }
+  ]
+]
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

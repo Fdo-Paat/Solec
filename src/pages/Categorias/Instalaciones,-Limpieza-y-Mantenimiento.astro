@@ -1,0 +1,62 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [
+  [
+    "Instalaciones, Limpieza y Mantenimiento",
+    "Ofrecemos una amplia gama de productos de limpieza y suministros de limpieza para mantener las instalaciones comerciales e industriales seguras y bien mantenidas, limpiadores y desengrasantes, productos para el cuidado de pisos y desinfectantes y sanitizantes de superficies. Además, lubricantes, grasas y aceites ayudan a que tus motores, herramientas y máquinas funcionen sin problemas.",
+    "Instalaciones,-Limpieza-y-Mantenimiento"
+  ],
+  [
+    {
+      "name": "Productos Químicos",
+      "image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/70125490.jpg"
+    },
+    {
+      "name": "Suministros de Limpieza",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513597.jpg"
+    },
+    {
+      "name": "Productos ESD",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1639764.jpg"
+    },
+    {
+      "name": "Seguridad de Instalaciones",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1639882.jpg"
+    },
+    {
+      "name": "HVAC",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079777.jpg"
+    },
+    {
+      "name": "Suministros de Oficina",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4842994.jpg"
+    },
+    {
+      "name": "Seguridad y EPP",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2797739.jpg"
+    },
+    {
+      "name": "Equipos de Taller y Almacenamiento",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3233024.jpg"
+    }
+  ]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+    <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

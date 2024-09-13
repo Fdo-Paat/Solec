@@ -1,0 +1,106 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"Neumática y Control de Fluidos",
+"El equipo de neumática y control de fluidos ofrece una forma altamente rentable y segura de alimentar una amplia gama de sistemas. Ya sea que esté trabajando en un proyecto de construcción comercial, una instalación industrial o un trabajo de diferente naturaleza, nuestra gama de equipos de control de fluidos y neumática proporciona la versatilidad que necesita para que varios sistemas operen de manera efectiva."],
+[
+{
+"name": "Preparación/Tratamiento de Aire",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513875.jpg"
+},
+{
+"name": "Bombas de Aire / Compresores de Aire",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2198134.jpg"
+},
+{
+"name": "Sopladores de Aire Automatizados",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/6482178.jpg"
+},
+{
+"name": "Accesorios de Conexión",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2304620.jpg"
+},
+{
+"name": "Conexiones",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2302705.jpg"
+},
+{
+"name": "Controles de Flujo / Controles de Velocidad",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2777609.jpg"
+},
+{
+"name": "Hidráulica",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3138478.jpg"
+},
+{
+"name": "Instrumentación",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513876.jpg"
+},
+{
+"name": "Elementos Lógicos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301284.jpg"
+},
+{
+"name": "Conectores de Múltiples Líneas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1635283.jpg"
+},
+{
+"name": "Tuberías y Fontanería",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4640357.jpg"
+},
+{
+"name": "Accesorios para Actuadores Neumáticos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2155382.jpg"
+},
+{
+"name": "Actuadores Neumáticos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2302709.jpg"
+},
+{
+"name": "Silenciadores Neumáticos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1635282.jpg"
+},
+{
+"name": "Bombas y Accesorios de Bombas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4697692.jpg"
+},
+{
+"name": "Cristales de Visión",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3139079.jpg"
+},
+{
+"name": "Tuberías / Mangueras",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2314286.jpg"
+},
+{
+"name": "Vacío",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513874.jpg"
+},
+{
+"name": "Válvulas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513877.jpg"
+}
+]
+]
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

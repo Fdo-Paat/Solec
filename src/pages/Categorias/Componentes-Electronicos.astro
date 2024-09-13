@@ -1,0 +1,116 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+const info = [
+  [
+    "Componentes Electrónicos",
+    "Los componentes electrónicos pasivos junto con los semiconductores están en el corazón de la electrónica.\n\nTener los conectores y partes electrónicas correctos para completar un circuito es clave para realizar correctamente tu proyecto o tarea laboral. Puedes crear muchos productos diferentes utilizando diferentes componentes electrónicos para completarlos y desafiar tus percepciones con nuevos y emocionantes proyectos.",
+    "Componentes-Electrónicos"
+  ],
+  [
+    {
+      "name": "Sensores de Montaje en Placa",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4073525.jpg"
+    },
+    {
+      "name": "Capacitores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4313274.jpg"
+    },
+    {
+      "name": "Computación",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1635003.jpg"
+    },
+    {
+      "name": "Herramientas de Desarrollo e Ingeniería",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2869780.jpg"
+    },
+    {
+      "name": "Semiconductores Discretos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4328125.jpg"
+    },
+    {
+      "name": "Blindaje/Supresión EMI/RFI",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1989591.jpg"
+    },
+    {
+      "name": "Tuberías de Descarga de Gas (GDT)",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2958813.jpg"
+    },
+    {
+      "name": "Inductores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301311.jpg"
+    },
+    {
+      "name": "Circuitos Integrados",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4328128.jpg"
+    },
+    {
+      "name": "Optoelectrónica",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4700599.jpg"
+    },
+    {
+      "name": "Accesorios y Kits Pasivos",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2828378.jpg"
+    },
+    {
+      "name": "Módulo de Entrada de Potencia (PEM)",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513964.jpg"
+    },
+    {
+      "name": "Accesorios de Módulo de Entrada de Potencia",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2544842.jpg"
+    },
+    {
+      "name": "Matrices de Resistores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1641137.jpg"
+    },
+    {
+      "name": "Redes de Divisores de Resistencia",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2828523.jpg"
+    },
+    {
+      "name": "Resistencias",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4306675.jpg"
+    },
+    {
+      "name": "Productos RF",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1639830.jpg"
+    },
+    {
+      "name": "Termistores",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2302022.jpg"
+    },
+    {
+      "name": "Resistencias Variables",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1641416.jpg"
+    },
+    {
+      "name": "Varistores (MOV)",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2958806.jpg"
+    },
+    {
+      "name": "Divisores y Multiplexores de Video",
+      "image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2300721.jpg"
+    }
+  ]
+]
+---
+
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+    <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

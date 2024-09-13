@@ -1,0 +1,87 @@
+---
+
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"Motores y Controladores de Motores",
+"Los controladores de motores y las piezas eléctricas de motores tienen varias funciones y aplicaciones. Independientemente del tipo de motor que esté utilizando en su proyecto, necesitará tener un controlador de alguna forma. Grande o pequeño, RS tiene todos los motores que necesita y los controles para hacerlos funcionar.",
+"Motores-y-Controladores-de-Motores"],
+[
+{
+"name": "Accesorios de accionamiento AC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890608.jpg"
+},
+{
+"name": "Accionamientos AC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890610.jpg"
+},
+{
+"name": "Controladores de motores DC",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890606.jpg"
+},
+{
+"name": "Motorreductores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4388642.jpg"
+},
+{
+"name": "Accesorios para motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2520516.jpg"
+},
+{
+"name": "Protección de motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154623.jpg"
+},
+{
+"name": "Accesorios de protección de motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154624.jpg"
+},
+{
+"name": "Accesorios de arranque de motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154626.jpg"
+},
+{
+"name": "Arrancadores de motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/7105022.jpg"
+},
+{
+"name": "Combinaciones de motor y accionamiento",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2978453.jpg"
+},
+{
+"name": "Motores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4388648.jpg"
+},
+{
+"name": "Calentadores de sobrecarga",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4388654.jpg"
+},
+{
+"name": "Sobrecargas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154582.jpg"
+},
+{
+"name": "Accionamientos servo",
+"image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/71244797.jpg"
+}
+]
+]
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

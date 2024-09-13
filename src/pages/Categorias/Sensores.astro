@@ -1,0 +1,153 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [
+["Sensores",
+"Los sensores están en stock y listos para enviar el mismo día desde RS. RS es un distribuidor autorizado de sensores de fabricantes líderes como Banner Engineering, SICK, Sensata, Pepperl+Fuchs, Honeywell, Balluff y Turck. Las aplicaciones van desde la detección de posición para el procesamiento de alimentos o el ensamblaje automotriz hasta la detección de seguridad inteligente.",
+"Sensores"],
+[
+{
+"name": "Acelerómetros",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886741.jpg"
+},
+{
+"name": "Sensores de Calidad del Aire",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886742.jpg"
+},
+{
+"name": "Sondas de Anemómetro",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4693263.jpg"
+},
+{
+"name": "Lectores de Códigos de Barras",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886743.jpg"
+},
+{
+"name": "Transductores de Corriente",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886744.jpg"
+},
+{
+"name": "Encoders",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886746.jpg"
+},
+{
+"name": "Sensores de Flujo",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886747.jpg"
+},
+{
+"name": "Sensor de Horquilla/Sensor de Ranura",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2487650.jpg"
+},
+{
+"name": "Sensores de Efecto Hall",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886748.jpg"
+},
+{
+"name": "Sensores de Inclinación",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886749.jpg"
+},
+{
+"name": "Cortinas de Luz",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154618.jpg"
+},
+{
+"name": "Sensores de Luz",
+"image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/70746259.jpg"
+},
+{
+"name": "Transductores Lineales",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886752.jpg"
+},
+{
+"name": "Sensores de Nivel de Líquido",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886753.jpg"
+},
+{
+"name": "Celdas de Carga",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886754.jpg"
+},
+{
+"name": "Sensores de Campo Magnético",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886755.jpg"
+},
+{
+"name": "Sensores Magnéticos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886756.jpg"
+},
+{
+"name": "Sensores de pH",
+"image": "https://assets.rs-online.com/c_scale,w_200,f_auto,q_auto,d_no_image.png/73689507.jpg"
+},
+{
+"name": "Sensores Fotoeléctricos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886757.jpg"
+},
+{
+"name": "Sensores de Presión",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886758.jpg"
+},
+{
+"name": "Sensores de Proximidad",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3882635.jpg"
+},
+{
+"name": "Sensores de Radar",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886759.jpg"
+},
+{
+"name": "Identificación por Radiofrecuencia (RFID)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886760.jpg"
+},
+{
+"name": "Accesorios para Sensores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3882644.jpg"
+},
+{
+"name": "Galgas Extensométricas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886761.jpg"
+},
+{
+"name": "Sensores de Temperatura",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4366748.jpg"
+},
+{
+"name": "Termostatos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886763.jpg"
+},
+{
+"name": "Sensores de Par",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886764.jpg"
+},
+{
+"name": "Sensores de Vibración",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886765.jpg"
+},
+{
+"name": "Sensores de Visión",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886766.jpg"
+},
+{
+"name": "Sensores de Voltaje",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886767.jpg"
+}
+]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

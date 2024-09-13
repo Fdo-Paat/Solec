@@ -1,0 +1,90 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [
+	[
+"Controles industriales",
+"Los sistemas de automatización y control industrial están desempeñando un papel cada vez más significativo en una diversa gama de industrias.",
+"Controles-industriales"],
+[
+{
+"name": "Contactores y accesorios",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079256.jpg"
+},
+{
+"name": "Estaciones de control",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890597.jpg"
+},
+{
+"name": "Controladores y accesorios",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079257.jpg"
+},
+{
+"name": "Interruptores de desconexión",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079258.jpg"
+},
+{
+"name": "Contadores electrónicos y mecánicos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079786.jpg"
+},
+{
+"name": "Acopladores de señal inductivos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3886750.jpg"
+},
+{
+"name": "Protección de máquinas y seguridad de máquinas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079262.jpg"
+},
+{
+"name": "Medidores de panel",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079264.jpg"
+},
+{
+"name": "Tomas de corriente",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3097744.jpg"
+},
+{
+"name": "Interruptores de transferencia de energía",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2510453.jpg"
+},
+{
+"name": "Robots",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/6119079.jpg"
+},
+{
+"name": "Acondicionamiento de señal y convertidores de señal",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154601.jpg"
+},
+{
+"name": "Anillos deslizantes",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/3571538.jpg"
+},
+{
+"name": "Solenoides y accesorios de solenoide",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079265.jpg"
+},
+{
+"name": "Temporizadores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079266.jpg"
+},
+]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>

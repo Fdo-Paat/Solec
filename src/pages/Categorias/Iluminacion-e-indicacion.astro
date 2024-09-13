@@ -1,0 +1,81 @@
+---
+import Header from "../../components/header.astro"
+import Footer from "../../components/footer1.astro"
+import Jumb from "../../components/jumbotron.astro"
+
+const info = [[
+"Iluminación e indicación",
+"RS ofrece una amplia variedad de pantallas y productos optoelectrónicos, incluyendo LEDs visibles y de alta luminosidad, disponibles en todos los colores, así como en blanco frío, cálido y neutro. También están disponibles emisores y detectores de IR y UV, además de optoacopladores. La variedad incluye marcas líderes como 3M, ABB y Advantech.",
+"Iluminacion-e-indicacion"],
+[
+{
+"name": "Sonoros",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4713047.jpg"
+},
+{
+"name": "Balastos",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4700602.jpg"
+},
+{
+"name": "Accesorios para balizas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4154605.jpg"
+},
+{
+"name": "Balizas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890632.jpg"
+},
+{
+"name": "Linternas y luces de trabajo",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4957708.jpg"
+},
+{
+"name": "Portalámparas",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2301439.jpg"
+},
+{
+"name": "Lámparas (bombillas)",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/1640136.jpg"
+},
+{
+"name": "Lentes",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2518911.jpg"
+},
+{
+"name": "Torres de luz, componentes y accesorios",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4079261.jpg"
+},
+{
+"name": "Iluminación",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2518912.jpg"
+},
+{
+"name": "Indicadores de montaje en panel, lentes y hardware",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2513973.jpg"
+},
+{
+"name": "Fotocontroladores",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/4700603.jpg"
+},
+{
+"name": "Alertas de energía",
+"image": "https://assets.rs-online.com/f_auto,q_auto,d_no_image.png/mkt/category/2890651.jpg"
+}
+]
+]
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{info[0][0]}</title>
+		<script is:inline src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+	</head>
+	<body>
+		<Header/>
+        <Jumb title={info[0][0]} contenido={info[0][1]} categories={info[1]} />
+		<Footer/>
+	</body>
+</html>
