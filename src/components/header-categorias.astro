@@ -107,7 +107,6 @@ const allCategories = [
   "Cables-y-Alambres"
 ]*/
 ]
-const url = Astro.url.pathname
 ---
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900 p-5">
@@ -126,14 +125,9 @@ const url = Astro.url.pathname
       </div>
       <div id="mega-menu" class="z-20 items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
           <ul class="flex flex-col mt-4 font-bold text-lg md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-
-            
-            {url !== '/' && (
-            <li>
-                  <a href="../" class="block py-2 px-3 text-green-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-green-500 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Inicio</a>
+              <li>
+                  <a href="../../" class="block py-2 px-3 text-green-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-green-500 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
               </li>
-        )}
-
               <li>
                   <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-icons-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-gray-800 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">
                       Todas las Categorias <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -147,18 +141,20 @@ const url = Astro.url.pathname
                 >
                  <div>
                    <ul
-                     class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 px-4 py-5 mx-auto text-gray-900 dark:text-white md:px-200" aria-labelledby="mega-menu-icons-dropdown-button"
+                     class="grid md:grid-cols-3 grid-cols-2 px-4 py-5 mx-auto grid-gap 
+                      text-gray-900 dark:text-white md:px-200" aria-labelledby="mega-menu-icons-dropdown-button"
                    >
                      {
                        allCategories.map((e) => (
                          <li>
                            <a
-                             href={"../Categorias/"+e[2]}
-                             class="block p-5 rounded-lg hover:bg-green-200 dark:hover:bg-gray-700"
+                             href={"../"+e[2]}
+                             class="block p-6 rounded-lg hover:bg-green-400 dark:hover:bg-gray-200  hover:text-gray-100 hover:font-bold"
                            >
                              <div class="font-semibold">{e[0]}</div>
-                             <span class="text-sm text-gray-500 dark:text-gray-400">
+                             <span class="text-sm  dark:text-gray-200">
                                {e[1]}
+
                              </span>
                            </a>
                          </li>
@@ -167,17 +163,14 @@ const url = Astro.url.pathname
                  </div>
                 </div>
 
+
               </li>
-              {url !== '/fabricantes/' && (
               <li>
-                  <a href="../fabricantes/" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Fabricantes</a>
+                  <a href="../../fabricantes" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Fabricantes</a>
               </li>
-              )}
-              {url !== '/nosotros/' && (
-              <li>
-                  <a href="../nosotros/" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
+              <li>{}
+                  <a href="../../nosotros" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-green-600 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-green-500 md:dark:hover:bg-transparent dark:border-gray-700">Nosotros</a>
               </li>
-              )}
           </ul>
       </div>
   </div>
